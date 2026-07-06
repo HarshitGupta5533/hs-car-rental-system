@@ -1,100 +1,214 @@
-# HS CAR RENTAL - Premium Car Rental Web Application
+# 🚗 HS CAR RENTAL
 
-A complete, production-ready car rental web application with customer booking, UPI/COD payments, KYC verification, user dashboard, admin panel, CMS and real-time notifications.
+> Premium Car Rental Management System
 
-## Features
+A modern, fully responsive Full Stack Car Rental Management System developed to provide customers with a seamless online vehicle rental experience while enabling administrators to efficiently manage vehicles, bookings, payments, reviews, CMS content, and website settings.
 
-### Frontend
-- Responsive, mobile-friendly luxury black-white-gold design
-- Home page with hero banner, search, featured/popular/latest cars, reviews, about, contact, FAQs
-- Car listing with filters (brand, fuel, transmission, seating, price)
-- Car details with image gallery, specifications, features, pricing and availability calendar
-- Booking form with rental calculation and mandatory 2-person KYC
-- Payment page with dynamic UPI QR code and COD option
-- Booking confirmation with receipt download/print
-- User registration, login, forgot password, profile management
-- User dashboard with booking history, active/completed/cancelled bookings, payment history
-
-### Admin Panel
-- Secure admin login with role-based access
-- Dashboard with statistics (total cars, bookings, revenue, pending approvals, active rentals, users)
-- Car management: add, edit, delete, enable/disable cars
-- Booking management: view, approve, reject, cancel, update statuses
-- Payment management: manage UPI ID, QR code, COD, verify payments
-- Review management: approve, hide, delete customer reviews
-- Contact messages management
-- CMS: edit website name, hero content, about, contact, footer, policies, colors
-- Website settings: address, contact numbers, social links, Google Maps
-- Real-time notifications for new bookings, payments and contacts
-
-### Security
-- CSRF protection
-- Input sanitization and validation
-- Password hashing (Bcrypt)
-- XSS protection via output escaping
-- SQL injection protection via prepared statements
-- Role-based access control
-
-## Delivered Source Code
-
-This repository contains two implementations:
-
-1. **React Demo (`src/` + deployed Vercel app)**
-   - Fully functional frontend demo using Vite + React + TypeScript + Tailwind CSS
-   - Uses browser localStorage for state persistence
-   - Demonstrates the complete user journey and admin workflow
-
-2. **PHP/MySQL Backend (`php/` + `database/schema.sql`)**
-   - Production-ready PHP backend source code
-   - MySQL database schema with all required tables
-   - REST API endpoints and Bootstrap-based admin panel
-   - Intended for deployment on a PHP/MySQL hosting environment
-
-## Database Setup
-
-1. Create a MySQL database named `hs_car_rental`.
-2. Import `database/schema.sql`.
-3. Update `php/config.php` with your database credentials.
-
-Default admin credentials:  
-**Email:** admin@hscarrental.com  
-**Password:** password
-
-## PHP Deployment
-
-1. Upload `php/` folder contents to your web server (e.g., `public_html/`).
-2. Ensure PHP 7.4+ and MySQL 5.7+ are available.
-3. Set `BASE_URL` in `php/config.php` to your domain.
-4. Create `assets/uploads/` directory with write permissions for file uploads.
-
-## React Demo Deployment
-
-The React demo is built with Vite and deploys as a static site.
-
-```bash
-npm install
-npm run build
-```
-
-The `dist/` folder can be deployed to any static hosting service.
-
-## Currency
-
-All prices are displayed in Indian Rupees (₹ INR).
-
-## Tech Stack
-
-- Frontend: Vite, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Lucide React
-- Demo State: localStorage
-- Backend Source: PHP 7.4+, MySQL, PDO, Bootstrap 5
-- Currency: INR (₹)
-
-## Branding
-
-- Website Name: HS CAR RENTAL
-- Theme: Premium Luxury Black-White-Gold
-- Logo/Favicon: Custom HS car logo (`public/favicon.svg`)
+The application is designed with a modern UI, responsive layouts, secure backend architecture, and scalable project structure suitable for real-world rental businesses.
 
 ---
 
-For production deployment of the PHP/MySQL version, configure your web server, enable HTTPS, set up mail server for notifications, and update all configuration values in `php/config.php`.
+# 🌟 Key Features
+
+## Customer Portal
+
+- Browse luxury vehicles
+- Search vehicles
+- Advanced filtering
+- Vehicle details page
+- Availability Calendar
+- Online Booking
+- Contact Form
+- About Page
+- Customer Reviews
+- Responsive User Interface
+- Mobile Friendly Navigation
+- Secure Authentication
+
+---
+
+## Admin Portal
+
+- Dashboard Analytics
+- Car Management
+- Booking Management
+- Payment Management
+- UPI Settings
+- Cash On Delivery
+- Review Moderation
+- Contact Messages
+- CMS Management
+- Website Settings
+- Dynamic Website Content
+
+---
+
+# 📱 Responsive Design
+
+The application is fully responsive and optimized for all devices.
+
+### Desktop
+
+✔ Responsive Dashboard
+
+✔ Dynamic Layout
+
+✔ Optimized Tables
+
+---
+
+### Tablet
+
+✔ Responsive Cards
+
+✔ Flexible Grid
+
+✔ Touch Friendly
+
+---
+
+### Mobile
+
+✔ Hamburger Menu
+
+✔ Responsive Forms
+
+✔ Mobile Navigation
+
+✔ Responsive Cards
+
+✔ Auto Adjust Grid Layout
+
+✔ Responsive Typography
+
+✔ Mobile Optimized Tables
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technology |
+|------------|------------|
+| Frontend Language | HTML5 |
+| Programming Language | TypeScript |
+| Framework | React 19 |
+| Build Tool | Vite |
+| Styling | Tailwind CSS v4 |
+| Icons | Lucide React |
+| Animation | Framer Motion |
+| Routing | React Router DOM |
+| State Management | React Context API + localStorage |
+| Backend | PHP 7.4+ |
+| Database | MySQL |
+| Database Library | PDO Prepared Statements |
+| Admin UI | Bootstrap 5 |
+| Deployment | Vercel |
+| Currency | Indian Rupees (₹ INR) |
+
+---
+
+# 📂 Modules
+
+## Customer
+
+- Home
+- Cars Listing
+- Car Details
+- Search
+- Filter
+- Booking
+- About
+- Contact
+
+## Admin
+
+- Dashboard
+- Cars
+- Bookings
+- Payments
+- Reviews
+- Messages
+- CMS
+- Website Settings
+
+---
+
+# 📂 Folder Structure
+
+```
+HS-Car-Rental-System
+
+client/
+│
+├── src/
+├── assets/
+├── pages/
+├── components/
+├── context/
+├── hooks/
+
+server/
+│
+├── php/
+├── api/
+├── config/
+├── models/
+
+database/
+
+README.md
+
+package.json
+```
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/yourusername/HS-Car-Rental-System.git
+
+cd HS-Car-Rental-System
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 🌐 Deployment
+
+Frontend is deployed using **Vercel** for fast and reliable hosting.
+
+> **Note:** The deployed demo uses React + localStorage. The complete PHP/MySQL backend source code is also included inside the `php/` folder, allowing deployment on traditional PHP hosting environments.
+
+---
+
+# 🔮 Future Enhancements
+
+- Razorpay Integration
+- Google Authentication
+- OTP Login
+- Email Notifications
+- Driver Booking
+- Live Vehicle Tracking
+- Invoice Generation
+- Booking History
+- Wishlist
+- AI Car Recommendation
+
+---
+
+# 👨‍💻 Developer
+
+**Deshna Joshi**
+**Harshit Gupta**
+
+M.Sc. IT (Data Analytics)
+
+---
+
+# ⭐ Support
+
+If you found this project useful, don't forget to ⭐ the repository.
