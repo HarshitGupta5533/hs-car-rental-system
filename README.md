@@ -203,6 +203,7 @@ Frontend is deployed using **Vercel** for fast and reliable hosting.
 # 👨‍💻 Developer
 
 **Deshna Joshi**
+
 **Harshit Gupta**
 
 M.Sc. IT (Data Analytics)
